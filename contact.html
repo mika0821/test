@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | LinguaPro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <span>LinguaPro</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="index.html#pricing" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="hero" style="background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p>Have questions? Ready to start your language journey? We're here to help!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="features" style="padding-top: var(--spacing-2xl);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Choose your preferred way to contact us. We typically respond within 24 hours.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>For general inquiries and support:</p>
+                    <p class="mt-2"><strong>hello@linguapro.com</strong></p>
+                    <a href="mailto:hello@linguapro.com" class="btn btn-outline mt-3">
+                        <i class="fas fa-paper-plane"></i> Send Email
+                    </a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Monday to Friday, 9AM - 6PM EST:</p>
+                    <p class="mt-2"><strong>+1 (555) 123-4567</strong></p>
+                    <a href="tel:+15551234567" class="btn btn-outline mt-3">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>For quick questions and support:</p>
+                    <p class="mt-2"><strong>+1 (555) 123-4567</strong></p>
+                    <a href="https://wa.me/15551234567" class="btn btn-outline mt-3" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Message Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="languages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Send Us a Message</h2>
+                <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+            </div>
+            
+            <div class="language-card" style="max-width: 800px; margin: 0 auto;">
+                <div class="language-content">
+                    <form id="contactForm">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-lg); margin-bottom: var(--spacing-lg);">
+                            <div>
+                                <label for="name" style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600;">
+                                    Full Name *
+                                </label>
+                                <input type="text" id="name" required 
+                                       style="width: 100%; padding: var(--spacing-md); border: 2px solid var(--bg-gray-100); border-radius: var(--radius-md);">
+                            </div>
+                            
+                            <div>
+                                <label for="email" style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600;">
+                                    Email Address *
+                                </label>
+                                <input type="email" id="email" required 
+                                       style="width: 100%; padding: var(--spacing-md); border: 2px solid var(--bg-gray-100); border-radius: var(--radius-md);">
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--spacing-lg);">
+                            <label for="language" style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600;">
+                                Language Interest
+                            </label>
+                            <select id="language" 
+                                    style="width: 100%; padding: var(--spacing-md); border: 2px solid var(--bg-gray-100); border-radius: var(--radius-md);">
+                                <option value="">Select a language</option>
+                                <option value="spanish">Spanish</option>
+                                <option value="french">French</option>
+                                <option value="german">German</option>
+                                <option value="japanese">Japanese</option>
+                                <option value="chinese">Chinese</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--spacing-lg);">
+                            <label for="message" style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600;">
+                                Your Message *
+                            </label>
+                            <textarea id="message" required rows="5"
+                                      style="width: 100%; padding: var(--spacing-md); border: 2px solid var(--bg-gray-100); border-radius: var(--radius-md); resize: vertical;"></textarea>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--spacing-lg);">
+                            <label style="display: flex; align-items: flex-start; gap: var(--spacing-sm); cursor: pointer;">
+                                <input type="checkbox" required style="margin-top: 4px;">
+                                <span style="font-size: 0.875rem;">
+                                    I agree to receive communications from LinguaPro about language courses and promotions.
+                                </span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="features" style="background: var(--bg-gray-50);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find quick answers to common questions about our language courses.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>How do I start learning?</h3>
+                    <p>Book a free consultation, choose your course, and start learning with our expert teachers.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>What's the class schedule?</h3>
+                    <p>We offer flexible scheduling - mornings, evenings, and weekends to fit your lifestyle.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Can I switch teachers?</h3>
+                    <p>Yes! If you're not satisfied with your teacher, we'll match you with another one.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Do you offer refunds?</h3>
+                    <p>We offer a 7-day money-back guarantee if you're not satisfied with your first lesson.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Start Your Language Journey Today</h2>
+            <p>Join thousands of successful language learners. Book your free trial lesson now!</p>
+            <a href="index.html#pricing" class="btn btn-secondary">
+                <i class="fas fa-rocket"></i> View Pricing Plans
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <span>LinguaPro</span>
+                    </a>
+                    <p class="mt-2">Master languages with expert guidance. Join our community of learners today.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="index.html#pricing">Pricing</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Languages</h3>
+                    <a href="courses.html#spanish">Spanish</a>
+                    <a href="courses.html#french">French</a>
+                    <a href="courses.html#german">German</a>
+                    <a href="courses.html#japanese">Japanese</a>
+                    <a href="courses.html#chinese">Chinese</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> hello@linguapro.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Language St, Education City</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 LinguaPro Language School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
