@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Courses | LinguaPro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <span>LinguaPro</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="courses.html" class="active">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html#pricing" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Courses Hero -->
+    <section class="hero" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Language Courses</h1>
+                <p>Choose from our comprehensive language programs, each designed to take you from beginner to fluent speaker.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Details -->
+    <section class="languages" style="padding-top: var(--spacing-2xl);">
+        <div class="container">
+            <!-- Spanish Course -->
+            <div class="language-card mb-5" id="spanish">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
+                    <div style="background: linear-gradient(135deg, #ff6b6b, #ff8e8e); padding: var(--spacing-xl); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-flag" style="font-size: 6rem; color: white;"></i>
+                    </div>
+                    <div class="language-content">
+                        <h3><i class="fas fa-language"></i> Spanish Course</h3>
+                        <p>Master Spanish with our comprehensive program that covers all levels from beginner to advanced.</p>
+                        
+                        <div class="mt-3">
+                            <h4>Course Levels:</h4>
+                            <ul style="list-style: none; margin: var(--spacing-md) 0;">
+                                <li><i class="fas fa-check text-success"></i> A1 - Complete Beginner</li>
+                                <li><i class="fas fa-check text-success"></i> A2 - Elementary</li>
+                                <li><i class="fas fa-check text-success"></i> B1 - Intermediate</li>
+                                <li><i class="fas fa-check text-success"></i> B2 - Advanced</li>
+                                <li><i class="fas fa-check text-success"></i> C1 - Proficiency</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <h4>What You'll Learn:</h4>
+                            <p>Conversational skills, grammar mastery, cultural understanding, business Spanish, and exam preparation.</p>
+                        </div>
+                        
+                        <a href="contact.html?course=spanish" class="btn btn-primary mt-3">
+                            <i class="fas fa-calendar"></i> Enroll Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- French Course -->
+            <div class="language-card mb-5" id="french">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
+                    <div style="background: linear-gradient(135deg, #4d96ff, #6bc5ff); padding: var(--spacing-xl); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-flag" style="font-size: 6rem; color: white;"></i>
+                    </div>
+                    <div class="language-content">
+                        <h3><i class="fas fa-language"></i> French Course</h3>
+                        <p>Immerse yourself in French language and culture with our authentic learning experience.</p>
+                        
+                        <div class="mt-3">
+                            <h4>Course Features:</h4>
+                            <ul style="list-style: none; margin: var(--spacing-md) 0;">
+                                <li><i class="fas fa-check text-success"></i> Native French teachers</li>
+                                <li><i class="fas fa-check text-success"></i> DELF/DALF preparation</li>
+                                <li><i class="fas fa-check text-success"></i> Cultural workshops</li>
+                                <li><i class="fas fa-check text-success"></i> Business French</li>
+                                <li><i class="fas fa-check text-success"></i> Pronunciation coaching</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <h4>Duration:</h4>
+                            <p>8-12 weeks per level, 2 sessions per week</p>
+                        </div>
+                        
+                        <a href="contact.html?course=french" class="btn btn-primary mt-3">
+                            <i class="fas fa-calendar"></i> Enroll Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- German Course -->
+            <div class="language-card mb-5" id="german">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
+                    <div style="background: linear-gradient(135deg, #10b981, #34d399); padding: var(--spacing-xl); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-flag" style="font-size: 6rem; color: white;"></i>
+                    </div>
+                    <div class="language-content">
+                        <h3><i class="fas fa-language"></i> German Course</h3>
+                        <p>Excel in business German with focus on professional communication and cultural nuances.</p>
+                        
+                        <div class="mt-3">
+                            <h4>Specializations:</h4>
+                            <ul style="list-style: none; margin: var(--spacing-md) 0;">
+                                <li><i class="fas fa-check text-success"></i> Business German</li>
+                                <li><i class="fas fa-check text-success"></i> Technical German</li>
+                                <li><i class="fas fa-check text-success"></i> Academic German</li>
+                                <li><i class="fas fa-check text-success"></i> TestDaF preparation</li>
+                                <li><i class="fas fa-check text-success"></i> Goethe certification</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <h4>Levels Available:</h4>
+                            <p>A1 to C2 (Common European Framework)</p>
+                        </div>
+                        
+                        <a href="contact.html?course=german" class="btn btn-primary mt-3">
+                            <i class="fas fa-calendar"></i> Enroll Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Languages -->
+            <div class="section-header mt-5">
+                <h2>More Languages</h2>
+                <p>We also offer courses in these popular languages.</p>
+            </div>
+            
+            <div class="language-cards">
+                <div class="language-card">
+                    <div style="background: linear-gradient(135deg, #8b5cf6, #a78bfa); height: 150px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-flag" style="font-size: 3rem; color: white;"></i>
+                    </div>
+                    <div class="language-content">
+                        <h3>Japanese</h3>
+                        <p>Learn Japanese characters, grammar, and conversation skills.</p>
+                        <a href="contact.html?course=japanese" class="btn btn-outline mt-2">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="language-card">
+                    <div style="background: linear-gradient(135deg, #f59e0b, #fbbf24); height: 150px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-flag" style="font-size: 3rem; color: white;"></i>
+                    </div>
+                    <div class="language-content">
+                        <h3>Chinese</h3>
+                        <p>Master Mandarin with focus on tones and characters.</p>
+                        <a href="contact.html?course=chinese" class="btn btn-outline mt-2">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="language-card">
+                    <div style="background: linear-gradient(135deg, #ec4899, #f472b6); height: 150px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-flag" style="font-size: 3rem; color: white;"></i>
+                    </div>
+                    <div class="language-content">
+                        <h3>Italian</h3>
+                        <p>Learn the language of art, food, and culture.</p>
+                        <a href="contact.html?course=italian" class="btn btn-outline mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Not Sure Which Course is Right for You?</h2>
+            <p>Book a free consultation with our language advisors to find your perfect course.</p>
+            <a href="contact.html" class="btn btn-secondary">
+                <i class="fas fa-comments"></i> Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <span>LinguaPro</span>
+                    </a>
+                    <p class="mt-2">Master languages with expert guidance. Join our community of learners today.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="index.html#pricing">Pricing</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Languages</h3>
+                    <a href="courses.html#spanish">Spanish</a>
+                    <a href="courses.html#french">French</a>
+                    <a href="courses.html#german">German</a>
+                    <a href="courses.html#japanese">Japanese</a>
+                    <a href="courses.html#chinese">Chinese</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> hello@linguapro.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Language St, Education City</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 LinguaPro Language School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
